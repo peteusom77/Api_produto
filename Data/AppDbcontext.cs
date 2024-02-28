@@ -11,6 +11,6 @@ namespace Api_produto.Data
     {
         public DbSet<Produto> produtos{get;set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        =>optionsBuilder.UseNpgsql(connectionString:"Host=localhost;Username=postgres;password=pepetela123;database=Produto");
+        =>optionsBuilder.UseNpgsql(connectionString:"Host=localhost;Username=postgres;password=;database=Produto");
     }
 }
