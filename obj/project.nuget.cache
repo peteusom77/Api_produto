@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rX7DdQUahZFJuV41JPgUnUHJYNgf1EUTCx7DjHjk1YBBC3MWPxiZkI/G2F0psbtu2vq3A0LJoGVDCac1uz58Mg==",
+  "dgSpecHash": "7LW1kXTRiN+y221lFJ4qZ1lB1Q1Ar7UBQmwS/AN9EPbz2dTCI5FEa5ZYCOekfviRuphP9cwDlSoQOK5vwvcHZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\peteusom\\Desktop\\Estudos\\programacaoGeral\\exercicios c#\\Api_produto\\Api_produto.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\peteusom\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\peteusom\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\peteusom\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\peteusom\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

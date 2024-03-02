@@ -1,4 +1,5 @@
 using Api_produto.Data;
+using Api_produto.mapping;
 using Api_produto.Repositorio;
 using Api_produto.Repositorio.InterFace;
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(ProdutoMapping));
 builder.Services.AddScoped<IProdutoRepositorio,ProdutoRepositorio>();
 builder.Services.AddDbContext<AppDbcontext>();
 var app = builder.Build();

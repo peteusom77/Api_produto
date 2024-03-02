@@ -6,6 +6,8 @@ using Api_produto.Data;
 using Api_produto.DTOs;
 using Api_produto.Model;
 using Api_produto.Repositorio.InterFace;
+using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace Api_produto.Repositorio
@@ -13,22 +15,17 @@ namespace Api_produto.Repositorio
     public class ProdutoRepositorio : IProdutoRepositorio
     {
         private readonly AppDbcontext _Dbcontext;
-        public ProdutoRepositorio(AppDbcontext appContext)
+        private readonly IMapper _mapper;
+        public ProdutoRepositorio(AppDbcontext appContext, IMapper mapper)
         {
             _Dbcontext = appContext;
+            _mapper = mapper;
         }
 
         public async Task<produtoDTO> AdicionarProduto(produtoDTO Newproduto)
         {
-            var NovoProduto = new Produto
-            {
-                NomeProduto =Newproduto.NomeProduto,
-                Categoria = Newproduto.Categoria,
-                Descricao =Newproduto.Categoria,
-                DataDeValidade =Newproduto.DataDeValidade,
-                Preco =Newproduto.Preco
-            };
-            await _Dbcontext.produtos.AddAsync(NovoProduto);
+            var produtoDTOs =  _mapper.Map<Produto>(Newproduto);
+            await _Dbcontext.produtos.AddAsync(produtoDTOs);
             await _Dbcontext.SaveChangesAsync();
             return Newproduto;
         }

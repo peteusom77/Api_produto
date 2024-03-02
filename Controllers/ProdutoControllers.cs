@@ -23,8 +23,8 @@ namespace Api_produto.Controllers
         [Route("Adicionar Produto")]
         public async Task<ActionResult<produtoDTO>> AdicionarProduto([FromBody] produtoDTO produto)
         {
-            produtoDTO voi = await produtoRe.AdicionarProduto(produto);
-            return produto;
+            var voi = await produtoRe.AdicionarProduto(produto);
+            return voi;
         }
     }
 }

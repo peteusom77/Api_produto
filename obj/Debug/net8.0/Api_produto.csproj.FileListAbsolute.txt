@@ -206,3 +206,5 @@ C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\obj
 C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\obj\Debug\net8.0\Api_produto.pdb
 C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\obj\Debug\net8.0\Api_produto.genruntimeconfig.cache
 C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\obj\Debug\net8.0\ref\Api_produto.dll
+C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\obj\Debug\net8.0\Api_produto.sourcelink.json
+C:\Users\peteusom\Desktop\Estudos\programacaoGeral\exercicios c#\Api_produto\bin\Debug\net8.0\AutoMapper.dll
